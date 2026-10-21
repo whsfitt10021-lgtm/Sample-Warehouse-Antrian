@@ -1,4 +1,4 @@
-# Control Tower
+# Control Tower Antrian kedatangan SCM LA
 
 Tampilan dashboard antrean mobil. Datanya masih contoh.
 
@@ -7,6 +7,4 @@ File:
 - `style.css`
 - `script.js`
 
-Taruh ketiganya di root repo, lalu aktifkan GitHub Pages dari Settings > Pages (branch `main`, folder `/root`).
-
-Data ada di variabel `data` di `script.js`.
+sample data  ada di variabel `data` di `script.js`. (dummy)
