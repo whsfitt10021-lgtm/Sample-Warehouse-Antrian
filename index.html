@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Control tower</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="nav" aria-label="Menu" id="nav"></nav>
+
+  <div>
+    <header class="header">
+      <h1>Control tower</h1>
+      <div class="header-kanan">
+        <span id="jam">2026-10-21 · 12.19</span>
+        <button class="btn-icon" id="btnRefresh" aria-label="Muat ulang">
+          <svg viewBox="0 0 24 24"><path d="M17.65 6.35A7.96 7.96 0 0012 4a8 8 0 108 8h-2a6 6 0 11-1.76-4.24L13 11h7V4l-2.35 2.35z"/></svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="ringkasan" id="ringkasan" aria-label="Ringkasan"></section>
+
+      <section class="panel">
+        <h2>Cek urutan mobil</h2>
+        <p class="redup" id="subjudul"></p>
+        <input type="search" id="cari" placeholder="Cari no. polisi" aria-label="Cari no. polisi" autocomplete="off">
+        <div class="filter" id="filter" role="group" aria-label="Filter status"></div>
+
+        <div class="tabel-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="tengah">Urutan kedatangan</th>
+                <th>Jam kedatangan</th>
+                <th>No mobil</th>
+                <th class="tengah">Urutan mulai muat</th>
+                <th>Jam mulai muat</th>
+                <th class="tengah">Urutan selesai muat</th>
+                <th>Jam selesai muat</th>
+                <th>No SPM</th>
+                <th>Tujuan</th>
+                <th>Jenis kendaraan</th>
+                <th>Mulai check</th>
+                <th>Selesai check</th>
+                <th>Security check out</th>
+              </tr>
+            </thead>
+            <tbody id="isiTabel"></tbody>
+          </table>
+        </div>
+
+        <p class="catatan">Data contoh untuk rancangan tampilan, bukan data operasional.</p>
+      </section>
+    </main>
+  </div>
+
+  <div class="overlay" id="overlay" hidden>
+    <div class="rincian" id="rincian" role="dialog" aria-modal="true"></div>
+  </div>
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
